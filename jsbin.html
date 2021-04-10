@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jsbinjquery.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="pageHeader">
+        <p class="pageHeading">Online Code Editor</p>
+      </div>
+      <div class="toggles">
+        <div class="toggle"><a class="selected" href="#">HTML</a></div>
+        <div class="toggle"><a class="selected" href="#">CSS</a></div>
+        <div class="toggle"><a class="selected" href="#">JS</a></div>
+        <div class="toggle"><a class="selected" href="#">Result</a></div>
+        <div class="run"><button id="run">RUN</button></div>
+      </div>
+    </div>
+
+    <div class="codeContainer">
+      <div class="htmlContainer">
+        <label class="codeLabel" for="">HTML</label>
+        <textarea class="codeTextArea" name="" id="htmlContent"></textarea>
+      </div>
+
+      <div class="cssContainer">
+        <label class="codeLabel" for="">CSS</label>
+        <textarea class="codeTextArea" name="" id="cssContent"></textarea>
+      </div>
+
+      <div class="jsContainer">
+        <label class="codeLabel" for="">JS</label>
+        <textarea class="codeTextArea" name="" id="jsContent"></textarea>
+      </div>
+
+      <div class="resultContainer">
+        <label class="codeLabel" for="">Result</label>
+        <iframe src="jsbin_iframe.html" class="iframe" frameborder="0"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
